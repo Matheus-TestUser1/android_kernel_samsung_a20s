@@ -2,7 +2,7 @@ VERSION = 4
 PATCHLEVEL = 9
 SUBLEVEL = 227
 EXTRAVERSION =
-NAME = Roaring Lionus
+NAME = CustomKernela20s-tesuser1
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -584,7 +584,6 @@ PHONY += $(MAKECMDGOALS) __build_one_by_one
 $(filter-out __build_one_by_one, $(MAKECMDGOALS)): __build_one_by_one
 	@:
 
-__build_one_by_one:
 	$(Q)set -e; \
 	for i in $(MAKECMDGOALS); do \
 		$(MAKE) -f $(srctree)/Makefile $$i; \
